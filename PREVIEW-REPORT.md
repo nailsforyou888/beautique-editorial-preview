@@ -9,9 +9,11 @@
 
 ## 1. Preview URL
 
-**TBD** — open files locally, or serve this folder (e.g. `python -m http.server` from `site/`) when a public preview URL is assigned.
+**https://nailsforyou888.github.io/beautique-editorial-preview/**
 
-Local entry: `index.html`
+Repo (preview only, not production): https://github.com/nailsforyou888/beautique-editorial-preview
+
+Local entry also: `index.html` under `/workspace/beautique-studio-audit/v2-preview/site/`
 
 ---
 
