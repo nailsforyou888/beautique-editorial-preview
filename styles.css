@@ -240,45 +240,49 @@ p:last-child { margin-bottom: 0; }
   .nav-mobile { display: none !important; }
 }
 
-/* —— Photo placeholders (empty tasteful blocks; no customer-facing replace copy) —— */
-.ph,
-.photo-ph {
-  background: linear-gradient(155deg, var(--beige) 0%, var(--cream) 48%, var(--taupe-soft) 100%);
-  display: block;
+/* —— Photo placeholders —— */
+.ph {
+  background: linear-gradient(145deg, var(--beige) 0%, var(--cream) 50%, var(--taupe-soft) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--espresso-soft);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  line-height: 1.45;
   min-height: 180px;
   position: relative;
   overflow: hidden;
 }
-.ph::after,
-.photo-ph::after {
+.ph::after {
   content: "";
   position: absolute;
   inset: 0;
   background: repeating-linear-gradient(
     -45deg,
     transparent,
-    transparent 14px,
-    rgba(44, 36, 28, 0.018) 14px,
-    rgba(44, 36, 28, 0.018) 28px
+    transparent 12px,
+    rgba(44, 36, 28, 0.02) 12px,
+    rgba(44, 36, 28, 0.02) 24px
   );
   pointer-events: none;
 }
-.ph span,
-.photo-ph span {
-  display: none; /* internal tracking only if present; never customer-facing */
+.ph span {
+  position: relative;
+  z-index: 1;
+  max-width: 16rem;
+  font-weight: 500;
 }
-.ph-tall { min-height: 380px; }
-.ph-hero { min-height: 460px; }
-@media (min-width: 900px) {
-  .ph-tall { min-height: 420px; }
-  .ph-hero { min-height: 520px; }
-}
+.ph-tall { min-height: 420px; }
+.ph-hero { min-height: 520px; }
 .ph-square { aspect-ratio: 1; min-height: 0; }
-.ph-wide { min-height: 260px; }
+.ph-wide { min-height: 280px; }
 
 /* —— Hero —— */
 .hero {
-  padding: 3rem 0 3.75rem;
+  padding: 3.5rem 0 4.5rem;
   background: var(--ivory);
 }
 .hero-grid {
@@ -339,10 +343,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* —— Sections —— */
-.section { padding: 3.75rem 0; }
-@media (min-width: 768px) {
-  .section { padding: 4.5rem 0; }
-}
+.section { padding: 4.5rem 0; }
 .section-cream { background: var(--cream); }
 .section-ivory { background: var(--ivory); }
 .section-espresso {
@@ -355,10 +356,7 @@ p:last-child { margin-bottom: 0; }
 .section-espresso .muted { color: var(--taupe-soft); }
 .section-head {
   max-width: 36rem;
-  margin-bottom: 2.25rem;
-}
-@media (min-width: 768px) {
-  .section-head { margin-bottom: 2.75rem; }
+  margin-bottom: 2.75rem;
 }
 .section-head.centered {
   text-align: center;
@@ -447,24 +445,6 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* —— Location feature —— */
-.loc-name {
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--espresso);
-  margin: 0 0 0.35rem;
-}
-.loc-place {
-  font-family: var(--font-serif);
-  font-size: clamp(1.85rem, 3.5vw, 2.65rem);
-  font-weight: 400;
-  color: var(--espresso);
-  margin: 0 0 1rem;
-  line-height: 1.15;
-}
-
 .loc-feature {
   display: grid;
   gap: 2rem;
@@ -530,25 +510,14 @@ p:last-child { margin-bottom: 0; }
   color: var(--muted);
 }
 .review-label {
-  display: block;
+  display: inline-block;
   font-size: 0.65rem;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--taupe);
-  margin-bottom: 0.65rem;
-  border: none;
-  padding: 0;
-}
-.review-more {
-  text-align: center;
-  margin-top: 2.25rem;
-}
-.section-head .muted {
-  font-size: 0.95rem;
-  max-width: 28rem;
-}
-.section-head.centered .muted {
-  margin-inline: auto;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--line);
+  padding: 0.2rem 0.5rem;
 }
 
 /* —— Instagram —— */
@@ -560,15 +529,12 @@ p:last-child { margin-bottom: 0; }
 @media (min-width: 700px) {
   .ig-row { grid-template-columns: repeat(6, 1fr); gap: 0.85rem; }
 }
-.ig-row .ph { min-height: 0; aspect-ratio: 1; }
+.ig-row .ph { min-height: 0; aspect-ratio: 1; padding: 0.75rem; font-size: 0.65rem; }
 
 /* —— Final CTA —— */
 .final-cta {
   text-align: center;
-  padding: 4rem 0;
-}
-@media (min-width: 768px) {
-  .final-cta { padding: 5rem 0; }
+  padding: 5rem 0;
 }
 .final-cta .btn-row { justify-content: center; margin-top: 2rem; }
 
