@@ -93,7 +93,7 @@ h1 {
   font-family: var(--font-display);
   font-size: clamp(36px, 9vw, 56px);
   line-height: 1.3;
-  letter-spacing: -2.24px;
+  letter-spacing: -0.04em;
   font-weight: 400;
 }
 
@@ -138,17 +138,18 @@ code {
 /* —— Preview badge —— */
 .preview-badge {
   position: fixed;
-  right: 16px;
+  left: 16px;
   bottom: 16px;
   z-index: 80;
   padding: 6px 12px;
   border-radius: var(--radius-pill);
-  background: var(--cta-ghost);
+  background: rgb(0 9 18 / 70%);
   border: 1px solid var(--line);
   color: var(--text-65);
   font-size: 11px;
   letter-spacing: 0;
   backdrop-filter: blur(12px);
+  pointer-events: none;
 }
 
 /* —— Buttons —— */
@@ -345,7 +346,7 @@ code {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 90% 70% at 50% 100%, #d39794 0%, #353f44 36%, #1b2228 58%, transparent 74%);
+    radial-gradient(ellipse 110% 85% at 50% 118%, #d39794 0%, #c48b88 18%, #353f44 40%, #1b2228 58%, transparent 74%);
   pointer-events: none;
 }
 
@@ -579,6 +580,31 @@ code {
   padding: 24px;
 }
 
+.showcase-visual::before,
+.showcase-visual::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.showcase-visual::before {
+  width: 42%;
+  aspect-ratio: 1;
+  top: 12%;
+  right: 10%;
+  background: rgb(211 151 148 / 42%);
+}
+
+.showcase-visual::after {
+  width: 28%;
+  aspect-ratio: 1;
+  bottom: 16%;
+  left: 12%;
+  background: rgb(255 243 240 / 10%);
+}
+
 .showcase-visual.nails {
   background:
     radial-gradient(circle at 78% 18%, rgb(211 151 148 / 55%), transparent 36%),
@@ -668,7 +694,7 @@ code {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 80% 70% at 50% 100%, #d39794 0%, #353f44 32%, #1b2228 55%, transparent 72%);
+  background: radial-gradient(ellipse 100% 80% at 50% 115%, #d39794 0%, #353f44 30%, #1b2228 52%, transparent 72%);
   pointer-events: none;
 }
 
