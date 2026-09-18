@@ -5,57 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Locations | Beautique Bar</title>
   <meta name="description" content="Beautique Bar locations — Yonge &amp; York Mills and Bridlewood Mall." />
+  <meta name="robots" content="noindex, nofollow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" data-header>
     <div class="container header-inner">
-      <a class="logo" href="../index.html"><span class="logo-mark">BB</span><span class="logo-word">Beautique <span>Bar</span></span></a>
+      <a class="logo" href="../index.html" aria-label="Beautique Bar home">
+        <span class="logo-mark">B</span>
+        <span class="logo-word">Beautique<span>.</span></span>
+      </a>
       <nav class="nav-desktop" aria-label="Primary">
-        <a href="../services.html">Services</a>
-        <a href="../pricing.html">Pricing</a>
-        <a href="../gallery.html">Gallery</a>
-        <a href="../about.html">About</a>
+        <a href="../index.html#services">Services</a>
         <a href="index.html">Locations</a>
-        <a class="nav-book" href="../index.html#book">Book</a>
       </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm" href="#studios" data-open-sheet>Book</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="nav-mobile container" aria-label="Mobile" data-nav-mobile>
+      <a href="../index.html#services">Services</a>
+      <a href="index.html">Locations</a>
+      <a href="#studios" data-open-sheet>Book</a>
+    </nav>
   </header>
+
   <main>
     <section class="page-hero">
-      <div class="container" style="max-width:40rem;">
-        <p class="eyebrow">Studios</p>
-        <h1>Locations</h1>
-        <p class="muted">Two Beautique Bar studios in Toronto. Choose Yonge or Bridlewood.</p>
+      <div class="container">
+        <p class="eyebrow-pill">Toronto · two studios</p>
+        <h1>Choose a studio</h1>
+        <p class="lead">Yonge &amp; York Mills or Beautique at Bridlewood Mall. Same brand — book the chair that is closer.</p>
       </div>
     </section>
-    <section class="section section-ivory">
-      <div class="container info-grid">
-        <div class="info-card" style="padding:2rem;border:1px solid var(--line);background:var(--off-white);">
-          <h3 style="font-family:var(--font-serif);font-size:1.5rem;letter-spacing:0;text-transform:none;font-weight:400;">Yonge &amp; York Mills</h3>
-          <p>3430 Yonge St, Toronto M4N 2M9<br />
-            <a href="tel:+14164847788">416-484-7788</a> · Text <a href="sms:+14374344884">437-434-4884</a><br />
-            Mon–Fri 10–8 · Sat 10–7 · Sun 10–6</p>
-          <div class="btn-row" style="margin-top:1.25rem;">
-            <a class="btn btn-primary" href="yonge/index.html">Explore Yonge</a>
-            <a class="btn btn-ghost" href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book</a>
+
+    <section class="section" id="studios">
+      <div class="container loc-grid">
+        <article class="loc-card">
+          <p class="kicker">Yonge &amp; York Mills</p>
+          <h3>Beautique Bar on Yonge</h3>
+          <address>
+            3430 Yonge St, Toronto, ON M4N 2M9<br />
+            <a class="link" href="tel:+14164847788">416-484-7788</a>
+          </address>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book Yonge</a>
+            <a class="btn btn-secondary" href="yonge/index.html">Details</a>
           </div>
-        </div>
-        <div class="info-card" style="padding:2rem;border:1px solid var(--line);background:var(--off-white);">
-          <h3 style="font-family:var(--font-serif);font-size:1.5rem;letter-spacing:0;text-transform:none;font-weight:400;">Bridlewood Mall</h3>
-          <p>Beautique Bar at Bridlewood<br />
-            URL path lock: <code>/locations/warden/</code></p>
-          <div class="btn-row" style="margin-top:1.25rem;">
-            <a class="btn btn-ghost" href="https://www.fresha.com/book-now/nails-for-you-m7weksrj/all-offer?share&amp;pId=32159" target="_blank" rel="noopener">Book Bridlewood</a>
+        </article>
+        <article class="loc-card">
+          <p class="kicker">Bridlewood Mall</p>
+          <h3>Beautique at Bridlewood</h3>
+          <address>
+            2900 Warden Ave, 2nd Floor by Library<br />
+            <a class="link" href="tel:+16477705232">647-770-5232</a>
+          </address>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://www.fresha.com/book-now/nails-for-you-m7weksrj/all-offer?share&amp;pId=32159" target="_blank" rel="noopener">Book Bridlewood</a>
+            <a class="btn btn-secondary" href="warden/index.html">Details</a>
           </div>
-          <p class="muted" style="margin-top:1rem;font-size:0.85rem;">Full Bridlewood location page not in this preview pass.</p>
-        </div>
+        </article>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="container footer-bottom" style="border:0;padding-top:0;"><span>© Beautique Bar</span><span>Toronto</span></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom" style="border: 0; padding-top: 0;">
+      <span>© Beautique Bar · Toronto</span>
+      <span>Static preview · not beautiquebar.com</span>
+    </div>
+  </footer>
+
+  <p class="preview-badge">Preview · not live</p>
+  <div class="sheet-backdrop" data-sheet-backdrop hidden></div>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" data-sheet hidden>
+    <button class="sheet-close" type="button" aria-label="Close" data-close-sheet>&times;</button>
+    <h3 id="sheet-title">Choose a studio</h3>
+    <p>Book directly on Fresha for the location you prefer.</p>
+    <a class="sheet-option" href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">
+      <strong>Yonge &amp; York Mills</strong>
+      <span>Beautique Bar on Yonge</span>
+    </a>
+    <a class="sheet-option" href="https://www.fresha.com/book-now/nails-for-you-m7weksrj/all-offer?share&amp;pId=32159" target="_blank" rel="noopener">
+      <strong>Beautique at Bridlewood Mall</strong>
+      <span>2900 Warden Ave</span>
+    </a>
+  </div>
+  <script src="../script.js"></script>
 </body>
 </html>

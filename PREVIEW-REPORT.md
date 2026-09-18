@@ -1,147 +1,132 @@
-# Beautique Bar — Editorial Preview Report (static HTML)
+# Beautique Bar — Fora-dark preview report
 
-**Date:** 2026-09-17  
-**Path:** `/workspace/beautique-studio-audit/v2-preview/site/`  
-**Brief:** `STEVEN-VISUAL-MOCKUP-BRIEF.md`  
-**Status:** Static backup / fast path — **not** live production (`beautiquebar.com` untouched)
+**Date:** 2026-09-18  
+**Repo:** https://github.com/nailsforyou888/beautique-editorial-preview  
+**Status:** Static GitHub Pages preview only — **not** live production (`beautiquebar.com` untouched)
 
 ---
 
-## 1. Preview URL
+## 1. Live Pages URL
 
 **https://nailsforyou888.github.io/beautique-editorial-preview/**
 
-Repo (preview only, not production): https://github.com/nailsforyou888/beautique-editorial-preview
+After this branch merges to `main`, Pages (source: `main` / root) will serve the Fora-dark homepage.
 
-Local entry also: `index.html` under `/workspace/beautique-studio-audit/v2-preview/site/`
-
----
-
-## 2–3. Screenshots
-
-Desktop / mobile homepage screenshots: **not captured in this pass** (static file build only). Capture when preview URL is live.
+Relative asset paths from each HTML file (`styles.css`, `../../styles.css`) — no `<base>` tag, so the project site path `/beautique-editorial-preview/` keeps working.
 
 ---
 
-## 4. What changed (vs live / prior direction)
-
-- New **editorial** visual system: ivory/cream surfaces, espresso ink, champagne-bronze accents — no pink, no gold gradients.
-- Homepage rebuilt to brief **exact section order** (hero → trust → 4 categories → experience → featured work → Yonge feature → reviews → Instagram → final CTA).
-- Yonge location page rebuilt to brief **exact order** (hero → intro → experience → signature → gallery → reviews → pricing → visit/NAP → book CTA).
-- Service sample: manicure-pedicure with category nav, professional copy, findable pricing (not spreadsheet).
-- Homepage **Book** opens location sheet (Yonge vs Bridlewood Fresha); Yonge page **Book → Yonge Fresha only**.
-- Mobile sticky **Call | Book**.
-- Footer: builder / RapidWebLaunch branding **dropped**.
-- No “over a decade” / tenure marketing claim.
-- Bio Gel (not Bio Bel); Snug (not Smug) where refill naming appears.
-- Dual location preserved (Yonge featured; Bridlewood linked, path lock `/locations/warden/` noted).
-
----
-
-## 5. Fonts used
-
-| Role | Family | Source |
-|------|--------|--------|
-| Display / headlines | **Cormorant Garamond** (400/500/600 + italic) | Google Fonts |
-| UI / body / nav / buttons / pricing | **Inter** (400/500/600) | Google Fonts |
-
----
-
-## 6. HEX palette
+## 2. HEX palette (from fora.so audit)
 
 | Token | HEX | Use |
 |-------|-----|-----|
-| Ivory | `#FAF7F2` | Page background |
-| Cream | `#F3EEE6` | Alternating sections |
-| Off-white | `#FFFEFB` | Cards / panels |
-| Beige | `#E8DFD4` | Soft fields / placeholder base |
-| Taupe soft | `#C9BDB0` | Muted chrome on dark |
-| Taupe | `#A89888` | Secondary muted |
-| Line | `#E5DCD0` | Borders |
-| Espresso | `#2C241C` | Primary ink, CTAs, header book |
-| Espresso soft | `#4A4038` | Body text |
-| Muted | `#6B6158` | Secondary copy |
-| Champagne | `#B8976A` | Accent CTAs / brows |
-| Champagne deep | `#9A7B52` | Hover / eyebrow |
-| Star (reviews only) | `#C9A227` | Rating glyphs |
+| Page root | `#000912` | `html` / alternating sections |
+| Section black | `#000000` | Major content bands |
+| Warm ivory | `#FFF3F0` | H1, key labels |
+| White | `#FFFFFF` | H2 / primary body |
+| Text 80% | `#FFFFFFCC` | Supporting copy, nav |
+| Text 65% | `#FFFFFFA6` | Meta / small labels |
+| Line 10% | `#FFFFFF1A` | Quiet borders |
+| Line 25% | `#FFFFFF40` | Stronger edges |
+| Card | `#0F0F0F` @ 85% | Translucent surfaces |
+| Card raised | `#171717` @ 85% | Showcase / sheet |
+| Card active | `#262626` @ 85% | Hover / raised |
+| Primary CTA fill | `#FFFFFFCC` | Pill buttons, dark text |
+| Secondary pill | `#FFFFFF1A` | Ghost pills |
+| Hero wash | `#1B2228 → #353F44 → #D39794` | Radial hero / closing CTA |
+
+No teal product accent, no Fora logo, no SaaS pricing tiers.
 
 ---
 
-## 7. Retained vs replace images
+## 3. Fonts
 
-| Asset | Status |
-|-------|--------|
-| All photography in this preview | **Placeholders** with exact text: `Replace with Beautique Bar professional photography` |
-| Logo | Typographic BB mark + wordmark (no live SVG pulled) — swap for real `/logo.svg` later |
-| Real BB interiors / nail / lash work | **Replace** placeholders before client-facing share |
+| Role | Family | Source |
+|------|--------|--------|
+| Body / nav / UI | **Inter** variable (`opsz` 14–32, weight 100–900) | Google Fonts |
+| Display / H1 / H3 | **Inter Display** name in the stack; optical size of variable Inter at large `opsz` | Google Fonts Inter (Display as a separate family is not always listed; optical sizing is the fallback) |
 
----
-
-## 8. Rewritten copy notes
-
-- Shorter above-the-fold; avoided stacking “luxury / premium / exclusive / best”.
-- Hero: “Careful hands. Quiet confidence.” — boutique-calm, not discount or flashy.
-- Trust strip: walk-ins, book ahead, two studios — no invented awards/ratings.
-- Reviews: labeled **Placeholder quote** until real Google quotes are inserted.
-- Service page: professional mani/pedi description; SEO substance kept (classic/gel/spa, both locations).
-- Pricing: “from $—” placeholders pointing to Fresha for live numbers.
+H1: ~56 / 72.8, weight 400, letter-spacing −2.24px.  
+H2: ~40 / 54, weight 500, letter-spacing −1.6px.  
+Body: 14 / 21, letter-spacing −0.28px.
 
 ---
 
-## 9. Removed / reorganized sections
+## 4. What changed vs the prior editorial preview
 
-- Demoted / omitted from this home: large blog grid, long service-card walls, builder chrome.
-- Instagram kept **secondary** (below reviews).
-- Yonge is a destination feature on home; Bridlewood not erased (footer + sheet + locations stub).
-- Stub-only: `services.html`, `pricing.html`, `gallery.html`, `about.html`, `locations/index.html`.
+| Prior (ivory / editorial) | This pass (Fora-dark) |
+|---------------------------|------------------------|
+| Ivory `#FAF7F2`, cream, espresso, champagne bronze | Near-black canvas, warm ivory type, translucent charcoal cards |
+| Cormorant Garamond display + Inter UI | Inter + Inter Display optical sizing only |
+| Sharp 2px buttons, uppercase tracking | Full pills, 14px labels, quiet hover |
+| Sticky ivory header | Sticky **transparent** nav (blur only after scroll) |
+| Hero split + photo placeholder | Centered cinematic hero + rose–charcoal radial + booking-feel panel |
+| Trust strip, experience, featured work, Instagram grid | Removed from homepage (not in this brief) |
+| Category **grid** of four services | **Tabbed** Nails / Pedicures / Lashes / Skin showcase |
+| Placeholder ★★★★★ review cards | **Live homepage quotes only** — no star counts |
+| Yonge featured; Bridlewood stub-only | Dual location Book strip + full `/locations/warden/` page |
+| Global Book → chooser only | Dual Fresha CTAs on hero, strip, closing CTA; nav Book still opens chooser |
+| Editorial section order from Steven v2 brief | Brief order: nav → hero → dual Book strip → tabs → quotes → closing CTA → footer |
 
----
-
-## 10. What must NOT change (and why)
-
-| Lock | Why |
-|------|-----|
-| Live `beautiquebar.com` | Preview only — no production deploy |
-| Yonge NAP: 3430 Yonge St, M4N 2M9 · 416-484-7788 · text 437-434-4884 | Accuracy / local SEO |
-| Yonge hours Mon–Fri 10–8 · Sat 10–7 · Sun 10–6 | FAQ-locked |
-| Yonge Fresha URL | Booking path |
-| Bridlewood Fresha URL + path `/locations/warden/` | Path lock / dual-shop booking |
-| No decade tenure claim | Brief + conversion audit |
-| Dual locations exist | Must not erase Bridlewood |
+Production `beautiquebar.com` was not edited. GTM was not added on this preview.
 
 ---
 
-## 11. Preview coverage
+## 5. Pages shipped
 
-| Page | Path | Status |
+| Page | Path | Notes |
 |------|------|--------|
-| Homepage | `site/index.html` | Full editorial |
-| Yonge location | `site/locations/yonge/index.html` | Full editorial |
-| Service (mani/pedi) | `site/nails/manicure-pedicure/index.html` | Full editorial |
-| Shared CSS | `site/styles.css` | System |
-| Stubs | services, pricing, gallery, about, locations | Minimal |
+| Homepage | `index.html` | Full Fora-dark landing |
+| Shared CSS / JS | `styles.css`, `script.js` | Mobile-first + 1080px column |
+| Yonge | `locations/yonge/index.html` | NAP + Yonge Fresha only |
+| Bridlewood (path lock) | `locations/warden/index.html` | Labeled Beautique / Bridlewood — **not** Nails For You |
+| Locations chooser | `locations/index.html` | Dual cards |
+| Continuity stubs | `services.html`, `about.html`, `gallery.html`, `pricing.html`, `privacy.html`, `terms.html`, `nails/manicure-pedicure/index.html` | Dark chrome so old links do not fall back to ivory |
 
 ---
 
-## File tree
+## 6. Booking CTAs (exact)
 
-```
-site/
-  index.html
-  styles.css
-  PREVIEW-REPORT.md
-  services.html
-  pricing.html
-  gallery.html
-  about.html
-  locations/index.html
-  locations/yonge/index.html
-  nails/manicure-pedicure/index.html
-```
+- **Yonge:** `https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true`
+- **Bridlewood:** `https://www.fresha.com/book-now/nails-for-you-m7weksrj/all-offer?share&pId=32159`  
+  UI label: **Beautique at Bridlewood Mall** / **Book Bridlewood**
 
-## NAP / Fresha (wired)
+---
 
-- **Yonge book:** `https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true`
-- **Bridlewood book:** `https://www.fresha.com/book-now/nails-for-you-m7weksrj/all-offer?share&pId=32159`
-- **Yonge call:** `tel:+14164847788`
-- **Yonge text:** `sms:+14374344884`
+## 7. Photography
+
+CSS gradient panels only (rose–charcoal Fora wash). Every visual is labeled **Replace with Beautique Bar photography**. No Unsplash, no hotlinked stock.
+
+---
+
+## 8. Open decisions
+
+| Item | Status |
+|------|--------|
+| **Bridlewood hours** | Unknown — page says call 647-770-5232 |
+| **Bridlewood Fresha canonical** | Preview uses live `book-now/nails-for-you-…pId=32159`; FAQ alternate `a/nails-for-you-beautique-bar-…` not used |
+| **Yonge postal `M4N 2M9`** | Shown (documented); missing from some live homepage schema |
+| **Yonge hours** | Shown as FAQ-documented Mon–Fri 10–8 / Sat 10–7 / Sun 10–6 — confirm with Steven before production |
+| **Per-shop Google review URLs** | Generic Google search until GBP links are supplied |
+| **Hero photography** | Gradient / booking-feel panel until real BB photos |
+| **Licence / decade brand claims** | Omitted. Client quote from Sangeetha J about *her* two decades of visits is reused as-is from the live homepage |
+| **`/locations/bridlewood/`** | Still a broken alias on live — not used here |
+| **Pages serve from `main`** | Merge this PR so the public preview URL updates |
+
+---
+
+## 9. Copy hygiene
+
+- No invented metrics, awards, or star averages
+- No “over a decade” brand tenure line
+- Bio Gel spelling preserved
+- Title/meta keep existing live “top-rated” language only
+- Quotes: Reem Abdali, Victoria Huang, Sangeetha J, Samantha C, Marcus Duncan, Mariam Clarke, Valerie, Jessica Cimino
+
+---
+
+## 10. URL locks preserved
+
+`/` · `/locations/` · `/locations/yonge/` · `/locations/warden/`
+
+Public name **Bridlewood**; folder stays **`warden`**.
