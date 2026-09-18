@@ -375,14 +375,12 @@ p:last-child { margin-bottom: 0; }
   width: min(100%, 980px);
   aspect-ratio: 16 / 10;
   min-height: 320px;
-  border-radius: 28px 28px 0 0;
+  border-radius: 28px;
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-bottom: 0;
+  border: 1px solid var(--line-25);
   box-shadow:
-    0 -20px 80px rgb(211 151 148 / 12%),
+    0 -24px 80px rgb(211 151 148 / 18%),
     0 40px 80px rgb(0 0 0 / 45%);
-  transform: translateY(8px);
 }
 
 .hero-art {
@@ -398,15 +396,14 @@ p:last-child { margin-bottom: 0; }
   inset: 0;
   z-index: 1;
   display: flex;
-  align-items: flex-end;
-  padding: 22px;
+  align-items: flex-start;
+  padding: 20px;
   text-align: left;
-  background: linear-gradient(180deg, transparent 42%, rgb(10 10 12 / 38%) 100%);
 }
 
 .mock-card {
-  width: min(100%, 340px);
-  padding: 22px 22px 20px;
+  width: min(100%, 300px);
+  padding: 18px 18px 16px;
   border-radius: var(--radius-inner);
   background: rgb(15 15 15 / 78%);
   border: 1px solid var(--line);
@@ -439,10 +436,11 @@ p:last-child { margin-bottom: 0; }
   .hero { padding: 56px 0 0; }
   .hero .btn-row { margin-bottom: 80px; }
   .hero-stage {
-    aspect-ratio: 16 / 9.2;
-    min-height: 460px;
+    aspect-ratio: 16 / 9;
+    min-height: 480px;
+    margin-bottom: -48px;
   }
-  .hero-stage-inner { padding: 28px 32px 36px; }
+  .hero-stage-inner { padding: 24px 28px; }
 }
 
 /* —— Sections —— */
@@ -453,9 +451,9 @@ p:last-child { margin-bottom: 0; }
 }
 
 .section-locations {
-  padding-top: 72px;
+  padding-top: 88px;
   background:
-    linear-gradient(180deg, #1b2228 0%, #000 28%);
+    linear-gradient(180deg, #1b2228 0%, #000 22%);
 }
 
 .split-head {

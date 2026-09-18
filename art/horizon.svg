@@ -1,45 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1B2228"/>
-      <stop offset="28%" stop-color="#2A3338"/>
-      <stop offset="52%" stop-color="#5A4A48"/>
-      <stop offset="72%" stop-color="#D39794"/>
-      <stop offset="100%" stop-color="#E8C8B8"/>
+      <stop offset="0%" stop-color="#2A3238"/>
+      <stop offset="22%" stop-color="#4A4548"/>
+      <stop offset="48%" stop-color="#B88986"/>
+      <stop offset="70%" stop-color="#E4B4A6"/>
+      <stop offset="100%" stop-color="#F3D2C2"/>
     </linearGradient>
-    <radialGradient id="bloom" cx="64%" cy="46%" r="38%">
-      <stop offset="0%" stop-color="#FFF3F0" stop-opacity=".92"/>
-      <stop offset="18%" stop-color="#F3C4B4" stop-opacity=".55"/>
-      <stop offset="48%" stop-color="#D39794" stop-opacity=".28"/>
-      <stop offset="100%" stop-color="#353F44" stop-opacity="0"/>
+    <radialGradient id="bloom" cx="70%" cy="42%" r="42%">
+      <stop offset="0%" stop-color="#FFF8F2" stop-opacity="1"/>
+      <stop offset="12%" stop-color="#FFE4D2" stop-opacity=".85"/>
+      <stop offset="36%" stop-color="#E8B8A8" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#C08A84" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#C9A39A"/>
-      <stop offset="100%" stop-color="#8C6A66"/>
+    <linearGradient id="ridge1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8C4B6"/>
+      <stop offset="100%" stop-color="#C49A90"/>
     </linearGradient>
-    <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#8B6A64"/>
-      <stop offset="100%" stop-color="#4A3838"/>
+    <linearGradient id="ridge2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4A89C"/>
+      <stop offset="100%" stop-color="#9A706C"/>
     </linearGradient>
-    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3A2E2E"/>
-      <stop offset="100%" stop-color="#141214"/>
+    <linearGradient id="ridge3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A87872"/>
+      <stop offset="100%" stop-color="#5C4240"/>
     </linearGradient>
-    <linearGradient id="haze" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#E8C8B8" stop-opacity=".0"/>
-      <stop offset="40%" stop-color="#D39794" stop-opacity=".22"/>
-      <stop offset="100%" stop-color="#1B2228" stop-opacity=".0"/>
+    <linearGradient id="ridge4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A403E"/>
+      <stop offset="100%" stop-color="#2A2224"/>
     </linearGradient>
-    <filter id="soft">
-      <feGaussianBlur stdDeviation="8"/>
-    </filter>
   </defs>
   <rect width="1600" height="900" fill="url(#sky)"/>
-  <ellipse cx="1040" cy="410" rx="340" ry="260" fill="url(#bloom)"/>
-  <path fill="#B88982" opacity=".55" d="M0 520 C180 490 320 560 520 530 C720 500 880 560 1100 520 C1280 490 1460 540 1600 510 L1600 900 L0 900 Z"/>
-  <path fill="url(#far)" d="M0 560 C220 530 400 600 640 568 C880 536 1060 610 1280 572 C1420 548 1520 590 1600 570 L1600 900 L0 900 Z"/>
-  <rect width="1600" height="220" y="500" fill="url(#haze)"/>
-  <path fill="url(#mid)" d="M0 640 C260 600 480 690 760 650 C1040 610 1220 700 1600 640 L1600 900 L0 900 Z"/>
-  <path fill="url(#near)" d="M0 760 C300 710 560 820 900 760 C1180 714 1360 810 1600 750 L1600 900 L0 900 Z"/>
-  <path fill="#FFF3F0" opacity=".08" d="M0 430 C400 400 900 460 1600 410 L1600 470 C900 520 400 460 0 490 Z" filter="url(#soft)"/>
+  <circle cx="1120" cy="390" r="54" fill="#FFF6EE"/>
+  <ellipse cx="1120" cy="390" rx="280" ry="210" fill="url(#bloom)"/>
+  <path fill="#F0C8BA" d="M0 500 C240 470 420 540 680 508 C960 472 1140 540 1380 500 C1480 484 1550 510 1600 498 L1600 900 L0 900 Z"/>
+  <path fill="url(#ridge1)" d="M0 548 C200 518 460 590 740 550 C1020 510 1240 588 1600 540 L1600 900 L0 900 Z"/>
+  <path fill="url(#ridge2)" d="M0 620 C280 580 520 670 820 628 C1100 590 1320 680 1600 630 L1600 900 L0 900 Z"/>
+  <path fill="url(#ridge3)" d="M0 710 C260 668 560 770 900 720 C1180 680 1380 770 1600 724 L1600 900 L0 900 Z"/>
+  <path fill="url(#ridge4)" d="M0 800 C340 760 640 850 980 804 C1240 770 1440 848 1600 812 L1600 900 L0 900 Z"/>
 </svg>
