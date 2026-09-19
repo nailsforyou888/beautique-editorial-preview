@@ -419,6 +419,8 @@ a.btn-outline:hover,
     text-align: center;
     margin-left: 0;
   }
+  .story-edge { display: none; }
+  .lede { max-width: 34ch; }
 }
 
 /* —— Hero rotate —— */
