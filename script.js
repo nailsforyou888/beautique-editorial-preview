@@ -43,8 +43,9 @@
   if (words.length > 1 && !reduce.matches) {
     var i = 0;
     setInterval(function () {
-      words[i].classList.remove("is-active");
+      var current = words[i];
       i = (i + 1) % words.length;
+      current.classList.remove("is-active");
       words[i].classList.add("is-active");
     }, 2800);
   }
