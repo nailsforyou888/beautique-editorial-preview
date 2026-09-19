@@ -8,41 +8,53 @@
   <meta name="robots" content="noindex, nofollow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../styles.css" />
 </head>
 <body>
-  <header class="site-header" data-header>
-    <div class="container header-inner">
-      <a class="logo" href="../../index.html"><span class="logo-mark">B</span><span class="logo-word">Beautique<span>.</span></span></a>
-      <nav class="nav-desktop" aria-label="Primary">
+  <header class="site-header is-scrolled" data-header>
+    <div class="header-bar">
+      <nav class="nav-left" aria-label="Primary">
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html#book" data-open-sheet>Book</a>
         <a href="../../index.html#services">Services</a>
+      </nav>
+      <a class="brand" href="../../index.html" aria-label="Beautique Bar home">
+        <span class="brand-mark">B</span>
+        <span class="brand-name">Beautique Bar</span>
+      </a>
+      <nav class="nav-right" aria-label="Secondary">
+        <a href="../../about.html">About</a>
         <a href="../../locations/index.html">Locations</a>
       </nav>
-      <div class="nav-actions">
-        <a class="btn btn-primary btn-sm" href="../../index.html#book">Book</a>
-      </div>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="nav-mobile" aria-label="Mobile" data-nav-mobile>
+      <a href="../../index.html">Home</a>
+      <a href="../../index.html#book" data-open-sheet>Book</a>
+    </nav>
   </header>
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow-pill">Nails · Pedicures</p>
-        <h1>Manicure &amp; pedicure</h1>
-        <p class="lead">Luxurious spa manicures and pedicures that leave your hands and feet pampered, polished and perfect.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="../../index.html#book">Book a studio</a>
-          <a class="btn btn-secondary" href="../../index.html#services">All services</a>
-        </div>
+  <main class="stub">
+    <div class="stub-inner">
+      <p class="eyebrow">Nails · Pedicures</p>
+      <h1>Manicure &amp; pedicure</h1>
+      <p class="lede">Luxurious spa manicures and pedicures that leave your hands and feet pampered, polished and perfect.</p>
+      <div class="btn-row" style="justify-content: flex-start;">
+        <a class="btn btn-fill" href="../../index.html#book" data-open-sheet>Book</a>
+        <a class="btn btn-outline" href="../../index.html#services">All services</a>
       </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container footer-bottom" style="border: 0; padding-top: 0;">
-      <span>© Beautique Bar · Toronto</span>
-      <span>Static preview · not beautiquebar.com</span>
     </div>
-  </footer>
+  </main>
+  <div class="sheet-backdrop" data-sheet-backdrop hidden></div>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" data-sheet hidden>
+    <button class="sheet-close" type="button" aria-label="Close" data-close-sheet>&times;</button>
+    <h3 id="sheet-title">Choose a studio</h3>
+    <p>Book directly on Fresha for the location you prefer.</p>
+    <a class="sheet-option" href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener"><strong>Yonge</strong><span>3430 Yonge St</span></a>
+    <a class="sheet-option" href="https://www.fresha.com/book-now/nails-for-you-m7weksrj/all-offer?share&amp;pId=32159" target="_blank" rel="noopener"><strong>Beautique at Bridlewood</strong><span>2900 Warden Ave</span></a>
+  </div>
   <script src="../../script.js"></script>
 </body>
 </html>

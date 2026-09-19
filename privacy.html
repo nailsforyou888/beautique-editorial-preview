@@ -7,28 +7,38 @@
   <meta name="robots" content="noindex, nofollow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header" data-header>
-    <div class="container header-inner">
-      <a class="logo" href="index.html"><span class="logo-mark">B</span><span class="logo-word">Beautique<span>.</span></span></a>
-      <nav class="nav-desktop" aria-label="Primary">
-        <a href="index.html#services">Services</a>
-        <a href="locations/index.html">Locations</a>
+  <header class="site-header is-scrolled" data-header>
+    <div class="header-bar">
+      <nav class="nav-left" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="index.html#book" data-open-sheet>Book</a>
       </nav>
-      <div class="nav-actions">
-        <a class="btn btn-primary btn-sm" href="index.html#book">Book</a>
-      </div>
+      <a class="brand" href="index.html" aria-label="Beautique Bar home">
+        <span class="brand-mark">B</span>
+        <span class="brand-name">Beautique Bar</span>
+      </a>
+      <nav class="nav-right" aria-label="Secondary">
+        <a href="locations/index.html">Locations</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="nav-mobile" aria-label="Mobile" data-nav-mobile>
+      <a href="index.html">Home</a>
+    </nav>
   </header>
   <main class="stub">
-    <div class="container stub-inner">
-      <p class="eyebrow-pill">Preview stub</p>
+    <div class="stub-inner">
+      <p class="eyebrow">Preview stub</p>
       <h1>Privacy</h1>
-      <p class="muted">This GitHub Pages preview does not collect form data. The live policy stays on beautiquebar.com/privacy/ — production is untouched.</p>
-      <a class="btn btn-primary" href="index.html">Back to home</a>
+      <p class="lede">This GitHub Pages preview does not collect form data. The live policy stays on beautiquebar.com/privacy/ — production is untouched.</p>
+      <a class="btn btn-fill" href="index.html">Back to home</a>
     </div>
   </main>
   <script src="script.js"></script>

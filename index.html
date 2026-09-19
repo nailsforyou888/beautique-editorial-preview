@@ -8,242 +8,278 @@
   <meta name="robots" content="noindex, nofollow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header" data-header>
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Beautique Bar home">
-        <span class="logo-mark">B</span>
-        <span class="logo-word">Beautique<span>.</span></span>
-      </a>
-      <nav class="nav-desktop" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#locations">Locations</a>
+    <div class="header-bar">
+      <nav class="nav-left" aria-label="Primary">
+        <a class="is-active" href="index.html">Home</a>
+        <a href="#book" data-open-sheet>Book</a>
+        <div class="nav-dd" data-dd>
+          <button type="button" aria-expanded="false">Services</button>
+          <div class="nav-dd-menu">
+            <a href="#services">Nails</a>
+            <a href="nails/manicure-pedicure/index.html">Pedicures</a>
+            <a href="#services">Lashes</a>
+            <a href="#services">Skin</a>
+            <a href="services.html">All services</a>
+          </div>
+        </div>
       </nav>
-      <div class="nav-actions">
-        <a class="btn btn-primary btn-sm" href="#book" data-open-sheet>Book</a>
-      </div>
+      <a class="brand" href="index.html" aria-label="Beautique Bar home">
+        <span class="brand-mark">B</span>
+        <span class="brand-name">Beautique Bar</span>
+      </a>
+      <nav class="nav-right" aria-label="Secondary">
+        <a href="about.html">About</a>
+        <div class="nav-dd" data-dd>
+          <button type="button">Locations</button>
+          <div class="nav-dd-menu">
+            <a href="locations/yonge/index.html">Yonge &amp; York Mills</a>
+            <a href="locations/warden/index.html">Bridlewood Mall</a>
+            <a href="locations/index.html">Both studios</a>
+          </div>
+        </div>
+        <div class="nav-dd" data-dd>
+          <button type="button">More</button>
+          <div class="nav-dd-menu">
+            <a href="#social">Instagram</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+          </div>
+        </div>
+      </nav>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
         <span></span><span></span><span></span>
       </button>
     </div>
-    <nav class="nav-mobile container" aria-label="Mobile" data-nav-mobile>
-      <a href="#services">Services</a>
-      <a href="#locations">Locations</a>
+    <nav class="nav-mobile" aria-label="Mobile" data-nav-mobile>
+      <a class="is-active" href="index.html">Home</a>
       <a href="#book" data-open-sheet>Book</a>
+      <a href="#services">Services</a>
+      <a href="about.html">About</a>
+      <a href="locations/yonge/index.html">Yonge</a>
+      <a href="locations/warden/index.html">Bridlewood</a>
+      <a href="https://www.instagram.com/beautiquebar88/" target="_blank" rel="noopener">Instagram</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <p class="eyebrow-pill">Toronto nail &amp; beauty · two studios</p>
-        <h1>Your beauty ritual, refined.</h1>
-        <p class="hero-lead">Nails, lashes, and skin at Yonge &amp; York Mills and Bridlewood Mall. Walk-ins welcome — we recommend booking ahead.</p>
+    <!-- 1. Hero -->
+    <section class="bleed hero" id="top" aria-label="Beautique Bar">
+      <div class="bleed-media">
+        <img class="bleed-poster bleed-poster--desktop" src="media/hero-desktop.jpg" alt="" />
+        <img class="bleed-poster bleed-poster--mobile" src="media/hero-mobile.jpg" alt="" />
+        <video class="bleed-video bleed-video--desktop" muted loop playsinline preload="metadata" poster="media/hero-desktop.jpg" data-auto-loop>
+          <source src="media/hero-desktop.mp4" type="video/mp4" />
+        </video>
+        <video class="bleed-video bleed-video--mobile" muted loop playsinline preload="metadata" poster="media/hero-mobile.jpg" data-auto-loop>
+          <source src="media/hero-mobile.mp4" type="video/mp4" />
+        </video>
+        <div class="bleed-shade"></div>
+      </div>
+      <div class="bleed-copy">
+        <h1 class="hero-rotate display-xl" aria-live="polite">
+          <span class="hero-word is-active" data-hero-word>Nails</span>
+          <span class="hero-word" data-hero-word>Lashes</span>
+          <span class="hero-word" data-hero-word>Skin</span>
+          <span class="hero-word" data-hero-word>Pedicures</span>
+          <span class="hero-word" data-hero-word>Your Ritual</span>
+        </h1>
+        <a class="btn btn-fill" href="#book" data-open-sheet>Book</a>
+      </div>
+    </section>
+
+    <!-- 2. Visual bridge -->
+    <section class="bleed bleed--tall" id="services" aria-label="See services">
+      <div class="bleed-media">
+        <img class="bleed-poster" src="media/bridge.jpg" alt="" />
+        <div class="bleed-shade"></div>
+      </div>
+      <div class="bleed-copy">
+        <p class="eyebrow">Toronto · two studios</p>
+        <h2 class="display-lg">See services</h2>
         <div class="btn-row">
-          <a class="btn btn-primary" href="#book" data-open-sheet>Book</a>
-          <a class="btn btn-secondary" href="#locations">Locations</a>
-        </div>
-        <div class="hero-stage">
-          <img class="hero-art" src="art/horizon.svg" alt="" />
-          <div class="hero-stage-inner">
-            <div class="mock-card">
-              <p class="kicker">Beautique Bar · Toronto</p>
-              <h3>Book a chair</h3>
-              <p>Choose Yonge &amp; York Mills or Beautique at Bridlewood Mall, then continue on Fresha.</p>
-              <div class="btn-row">
-                <a class="btn btn-primary btn-sm" href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book Yonge</a>
-                <a class="btn btn-secondary btn-sm" href="https://www.fresha.com/book-now/nails-for-you-m7weksrj/all-offer?share&amp;pId=32159" target="_blank" rel="noopener">Book Bridlewood</a>
-              </div>
-            </div>
-          </div>
+          <a class="btn btn-outline" href="#story">The ritual</a>
+          <a class="btn btn-fill" href="#book" data-open-sheet>Book</a>
         </div>
       </div>
     </section>
 
-    <section class="section section-locations" id="locations">
-      <div class="container">
-        <div class="split-head">
-          <h2>Two studios. Book the one that fits.</h2>
-          <p>While we welcome walk-ins, we highly recommend booking an appointment in advance to ensure you receive the personalized attention you deserve.</p>
-        </div>
-        <div class="loc-grid">
-          <article class="loc-card">
-            <p class="kicker">Yonge &amp; York Mills</p>
-            <h3>Beautique Bar on Yonge</h3>
-            <address>
-              3430 Yonge St, Toronto, ON M4N 2M9<br />
-              Call <a class="link" href="tel:+14164847788">416-484-7788</a><br />
-              Text <a class="link" href="sms:+14374344884">437-434-4884</a><br />
-              Mon–Fri 10–8 · Sat 10–7 · Sun 10–6
-            </address>
-            <div class="btn-row">
-              <a class="btn btn-primary" href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book Yonge</a>
-              <a class="btn btn-secondary" href="locations/yonge/index.html">Studio details</a>
-            </div>
-          </article>
-          <article class="loc-card">
-            <p class="kicker">Bridlewood Mall</p>
-            <h3>Beautique at Bridlewood</h3>
-            <address>
-              Bridlewood Mall, 2900 Warden Ave<br />
-              2nd Floor by Library, Scarborough, ON<br />
-              Call or text <a class="link" href="tel:+16477705232">647-770-5232</a><br />
-              Hours: call the studio — not listed here yet
-            </address>
-            <div class="btn-row">
-              <a class="btn btn-primary" href="https://www.fresha.com/book-now/nails-for-you-m7weksrj/all-offer?share&amp;pId=32159" target="_blank" rel="noopener">Book Bridlewood</a>
-              <a class="btn btn-secondary" href="locations/warden/index.html">Studio details</a>
-            </div>
-          </article>
-        </div>
+    <!-- 3. Story -->
+    <section class="story" id="story">
+      <img class="story-edge story-edge-a" src="media/story-edge-a.jpg" alt="" />
+      <img class="story-edge story-edge-b" src="media/story-edge-b.jpg" alt="" />
+      <img class="story-edge story-edge-c" src="media/story-edge-c.jpg" alt="" />
+      <div class="story-copy">
+        <h2 class="display-lg">Experience<br />Beautique</h2>
+        <p class="lede lede--ink">Beautique Bar is a Toronto nail and beauty studio for nails, lashes, and skin — Yonge &amp; York Mills and Bridlewood Mall. Whether you are seeking a quick touch-up or a complete pampering session, our team will ensure you leave feeling refreshed and rejuvenated.</p>
       </div>
     </section>
 
-    <section class="section" id="services">
-      <div class="container">
-        <div class="split-head">
-          <h2>Nails, pedicures, lashes, and skin.</h2>
-          <p>At Beautique Bar, you’ll experience expertly crafted services catered to your unique style and preferences — a rejuvenating visit that leaves you feeling pampered, confident, and beautiful.</p>
-        </div>
-
-        <div class="tabs" role="tablist" aria-label="Services">
-          <button class="tab" type="button" role="tab" aria-selected="true" data-tab="nails">Nails</button>
-          <button class="tab" type="button" role="tab" aria-selected="false" data-tab="pedicures">Pedicures</button>
-          <button class="tab" type="button" role="tab" aria-selected="false" data-tab="lashes">Lashes</button>
-          <button class="tab" type="button" role="tab" aria-selected="false" data-tab="skin">Skin</button>
-        </div>
-
-        <div class="showcase">
-          <div class="panel" data-panel="nails">
-            <div class="showcase-visual nails" role="img" aria-label="Nails">
-              <img class="hero-art" src="art/horizon.svg" alt="" />
-            </div>
-            <div class="showcase-copy">
-              <h3>Nails</h3>
-              <p>Unleash your creativity with sculpted, custom acrylic sets that are as durable as they are beautiful. Bio Gel is a fusion of beauty and health — natural-looking gel that’s nourishing for your nails. Shellac brings a flawless, mirror-like shine that lasts for weeks.</p>
-            </div>
-          </div>
-          <div class="panel" data-panel="pedicures" hidden>
-            <div class="showcase-visual pedicures" role="img" aria-label="Pedicures">
-              <img class="hero-art" src="art/horizon.svg" alt="" />
-            </div>
-            <div class="showcase-copy">
-              <h3>Pedicures</h3>
-              <p>Luxurious spa manicures and pedicures that leave your hands and feet pampered, polished and perfect.</p>
-            </div>
-          </div>
-          <div class="panel" data-panel="lashes" hidden>
-            <div class="showcase-visual lashes" role="img" aria-label="Lashes">
-              <img class="hero-art" src="art/horizon.svg" alt="" />
-            </div>
-            <div class="showcase-copy">
-              <h3>Lashes</h3>
-              <p>Luxurious lashes, meticulously applied to enhance your natural beauty and add everyday glamour.</p>
-            </div>
-          </div>
-          <div class="panel" data-panel="skin" hidden>
-            <div class="showcase-visual skin" role="img" aria-label="Skin">
-              <img class="hero-art" src="art/horizon.svg" alt="" />
-            </div>
-            <div class="showcase-copy">
-              <h3>Skin</h3>
-              <p>Nourishing facials that cleanse, hydrate and rejuvenate your skin for a healthy, radiant glow. Facial and body hair removal are tailored to your skin for a smooth, confident finish.</p>
-            </div>
-          </div>
-        </div>
+    <!-- 4. Service moment -->
+    <section class="bleed" id="service-moment" aria-label="Nails and the set">
+      <div class="bleed-media">
+        <img class="bleed-poster" src="media/service-moment.jpg" alt="" />
+        <video class="bleed-video" muted loop playsinline preload="metadata" poster="media/service-moment.jpg" data-auto-loop>
+          <source src="media/service-moment.mp4" type="video/mp4" />
+        </video>
+        <div class="bleed-shade bleed-shade--heavy"></div>
+      </div>
+      <div class="bleed-copy bleed-copy--right">
+        <p class="eyebrow">The set</p>
+        <h2 class="display-md">Chrome<br />&amp; colour</h2>
+        <p class="lede">Acrylic, Bio Gel, and Shellac — custom sets as durable as they are beautiful. Lashes applied to enhance your natural beauty. Facials that cleanse, hydrate, and rejuvenate.</p>
+        <a class="btn btn-outline" href="#book" data-open-sheet>Book</a>
       </div>
     </section>
 
-    <section class="section" id="quotes">
-      <div class="container">
-        <div class="split-head">
-          <h2>Reviews from our clients.</h2>
-          <p>From guests in our chairs.</p>
-        </div>
-        <div class="quote-grid">
-          <article class="quote-card">
-            <blockquote>I absolutely love coming to David to get my nails done. He’s professional, friendly and so talented.</blockquote>
-            <cite>Reem Abdali</cite>
-          </article>
-          <article class="quote-card">
-            <blockquote>Chloe did an excellent job and was so lovely. Very appreciated — I’ll definitely be back!</blockquote>
-            <cite>Victoria Huang</cite>
-          </article>
-          <article class="quote-card">
-            <blockquote>I’ve had my nails done here for almost two decades. The quality and care keep me coming back.</blockquote>
-            <cite>Sangeetha J</cite>
-          </article>
-          <article class="quote-card">
-            <blockquote>Just had a pedicure done by Michelle and it was absolutely perfect. So relaxing and so clean.</blockquote>
-            <cite>Samantha C</cite>
-          </article>
-          <article class="quote-card">
-            <blockquote>Make Beautique Bar your go-to spot for the best nails in the city. Friendly, professional, fantastic.</blockquote>
-            <cite>Marcus Duncan</cite>
-          </article>
-          <article class="quote-card">
-            <blockquote>The attention to detail and cleanliness was top-notch. Highly recommend this salon.</blockquote>
-            <cite>Mariam Clarke</cite>
-          </article>
-          <article class="quote-card">
-            <blockquote>The space is beautiful, classy and clean, and the staff are so welcoming. A lovely experience every time.</blockquote>
-            <cite>Valerie</cite>
-          </article>
-          <article class="quote-card">
-            <blockquote>Wonderful experience. Came in as a walk-in and Fariza was every bit as lovely as the reviews said.</blockquote>
-            <cite>Jessica Cimino</cite>
-          </article>
-        </div>
-        <p class="meta" style="margin-top: 24px;">
-          <a class="link" href="https://www.google.com/search?q=Beautique+Bar+Toronto+reviews" target="_blank" rel="noopener">Read more on Google</a>
-        </p>
+    <!-- 5. Atmosphere -->
+    <section class="bleed" id="atmosphere" aria-label="The studio">
+      <div class="bleed-media">
+        <img class="bleed-poster" src="media/atmosphere.jpg" alt="" />
+        <video class="bleed-video" muted loop playsinline preload="metadata" poster="media/atmosphere.jpg" data-auto-loop>
+          <source src="media/atmosphere.mp4" type="video/mp4" />
+        </video>
+        <div class="bleed-shade bleed-shade--heavy"></div>
+      </div>
+      <div class="bleed-copy">
+        <h2 class="display-xl">The<br />studio</h2>
+        <p class="lede">Come and indulge in the ultimate beauty and relaxation experience at Beautique Bar. Walk-ins welcome — we recommend booking ahead.</p>
+        <a class="btn btn-outline" href="#book" data-open-sheet>Book</a>
       </div>
     </section>
 
-    <section class="closing" id="book">
-      <div class="container">
-        <h2>Book your appointment</h2>
-        <p>Choose Yonge &amp; York Mills or Beautique at Bridlewood Mall — same brand, two chairs.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book Yonge</a>
-          <a class="btn btn-secondary" href="https://www.fresha.com/book-now/nails-for-you-m7weksrj/all-offer?share&amp;pId=32159" target="_blank" rel="noopener">Book Bridlewood</a>
-        </div>
+    <!-- 6. Location — Yonge -->
+    <div id="book"></div>
+    <section class="bleed" id="yonge" aria-label="Yonge location">
+      <div class="bleed-media">
+        <img class="bleed-poster" src="media/yonge.jpg" alt="" />
+        <video class="bleed-video" muted loop playsinline preload="metadata" poster="media/yonge.jpg" data-auto-loop>
+          <source src="media/yonge.mp4" type="video/mp4" />
+        </video>
+        <div class="bleed-shade bleed-shade--heavy"></div>
       </div>
+      <div class="bleed-copy">
+        <p class="eyebrow">Location</p>
+        <h2 class="display-lg">Yonge</h2>
+        <p class="lede">3430 Yonge St.</p>
+        <a class="btn btn-outline" href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book</a>
+      </div>
+    </section>
+
+    <!-- 7. Location — Bridlewood -->
+    <section class="bleed" id="bridlewood" aria-label="Bridlewood location">
+      <div class="bleed-media">
+        <img class="bleed-poster" src="media/bridlewood.jpg" alt="" />
+        <video class="bleed-video" muted loop playsinline preload="metadata" poster="media/bridlewood.jpg" data-auto-loop>
+          <source src="media/bridlewood.mp4" type="video/mp4" />
+        </video>
+        <div class="bleed-shade bleed-shade--heavy"></div>
+      </div>
+      <div class="bleed-copy">
+        <p class="eyebrow">Location</p>
+        <h2 class="display-lg">Bridlewood</h2>
+        <p class="lede">2900 Warden Ave.</p>
+        <a class="btn btn-outline" href="https://www.fresha.com/book-now/nails-for-you-m7weksrj/all-offer?share&amp;pId=32159" target="_blank" rel="noopener">Book</a>
+      </div>
+    </section>
+
+    <!-- 8. Loyalty / club -->
+    <section class="club" id="club">
+      <div class="club-inner">
+        <h2 class="display-lg">Your next set<br />starts here</h2>
+        <p class="lede">Ask about Beautique Club when you visit. Walk-ins welcome — book ahead for the chair you want, at Yonge or Beautique at Bridlewood Mall.</p>
+        <a class="btn btn-dark" href="#book" data-open-sheet>Book</a>
+      </div>
+    </section>
+
+    <!-- 9. Instagram strip -->
+    <section class="social" id="social">
+      <div class="social-head">
+        <p class="social-handle">beautiquebar88</p>
+      </div>
+      <div class="social-grid">
+        <a class="reel" href="https://www.instagram.com/beautiquebar88/" target="_blank" rel="noopener">
+          <img src="media/social-1.jpg" alt="" />
+          <span class="reel-play" aria-hidden="true"></span>
+          <span class="reel-cap">“Professional, friendly and so talented.” — Reem Abdali</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/beautiquebar88/" target="_blank" rel="noopener">
+          <img src="media/social-2.jpg" alt="" />
+          <span class="reel-play" aria-hidden="true"></span>
+          <span class="reel-cap">“I’ll definitely be back!” — Victoria Huang</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/beautiquebar88/" target="_blank" rel="noopener">
+          <img src="media/social-3.jpg" alt="" />
+          <span class="reel-play" aria-hidden="true"></span>
+          <span class="reel-cap">Nails — acrylic, Bio Gel, Shellac</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/beautiquebar88/" target="_blank" rel="noopener">
+          <img src="media/social-4.jpg" alt="" />
+          <span class="reel-play" aria-hidden="true"></span>
+          <span class="reel-cap">“Absolutely perfect. So relaxing and so clean.” — Samantha C</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/beautiquebar88/" target="_blank" rel="noopener">
+          <img src="media/social-5.jpg" alt="" />
+          <span class="reel-play" aria-hidden="true"></span>
+          <span class="reel-cap">Lashes — meticulously applied</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/beautiquebar88/" target="_blank" rel="noopener">
+          <img src="media/social-6.jpg" alt="" />
+          <span class="reel-play" aria-hidden="true"></span>
+          <span class="reel-cap">“The space is beautiful, classy and clean.” — Valerie</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/beautiquebar88/" target="_blank" rel="noopener">
+          <img src="media/social-7.jpg" alt="" />
+          <span class="reel-play" aria-hidden="true"></span>
+          <span class="reel-cap">Pedicures — pampered, polished and perfect</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/beautiquebar88/" target="_blank" rel="noopener">
+          <img src="media/social-8.jpg" alt="" />
+          <span class="reel-play" aria-hidden="true"></span>
+          <span class="reel-cap">“Attention to detail and cleanliness was top-notch.” — Mariam Clarke</span>
+        </a>
+      </div>
+      <p class="social-follow">
+        <a class="btn btn-outline" href="https://www.instagram.com/beautiquebar88/" target="_blank" rel="noopener">Follow on Instagram</a>
+      </p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
+    <div class="footer-grid">
       <div class="footer-brand">
-        <span class="logo-word">Beautique.</span>
+        <span class="brand-mark">B</span>
+        <span class="brand-name">Beautique Bar</span>
         <p>Nails, lashes, and skin at two Toronto studios. Preview only — not the live site.</p>
       </div>
       <div>
-        <h4>Services</h4>
-        <div class="footer-links">
-          <a href="#services">Nails</a>
-          <a href="#services">Pedicures</a>
-          <a href="#services">Lashes</a>
-          <a href="#services">Skin</a>
-        </div>
-      </div>
-      <div>
-        <h4>Locations</h4>
+        <h4>Yonge</h4>
         <div class="footer-nap">
-          <a href="locations/yonge/index.html">Yonge &amp; York Mills</a>
-          3430 Yonge St, Toronto M4N 2M9<br />
+          <a href="locations/yonge/index.html">Beautique Bar on Yonge</a>
+          3430 Yonge St, Toronto, ON M4N 2M9
           <a href="tel:+14164847788">416-484-7788</a>
-          <a href="locations/warden/index.html">Bridlewood Mall</a>
-          2900 Warden Ave, Scarborough<br />
-          <a href="tel:+16477705232">647-770-5232</a>
+          <a href="sms:+14374344884">Text 437-434-4884</a>
+          <a href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book Yonge</a>
         </div>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4>Bridlewood</h4>
+        <div class="footer-nap">
+          <a href="locations/warden/index.html">Beautique at Bridlewood Mall</a>
+          2900 Warden Ave, 2nd Floor by Library
+          <a href="tel:+16477705232">647-770-5232</a>
+          <a href="https://www.fresha.com/book-now/nails-for-you-m7weksrj/all-offer?share&amp;pId=32159" target="_blank" rel="noopener">Book Bridlewood</a>
+        </div>
+      </div>
+      <div>
+        <h4>More</h4>
         <div class="footer-links">
+          <a href="services.html">Services</a>
           <a href="https://www.instagram.com/beautiquebar88/" target="_blank" rel="noopener">Instagram</a>
           <a href="https://www.facebook.com/Beautiquebaryonge" target="_blank" rel="noopener">Facebook</a>
           <a href="privacy.html">Privacy</a>
@@ -251,13 +287,14 @@
         </div>
       </div>
     </div>
-    <div class="container footer-bottom">
+    <div class="footer-bottom">
       <span>© Beautique Bar · Toronto</span>
       <span>Static preview · not beautiquebar.com</span>
     </div>
   </footer>
 
   <p class="preview-badge">Preview · not live</p>
+  <a class="to-top" href="#top" data-to-top aria-label="Back to top">↑</a>
 
   <div class="sheet-backdrop" data-sheet-backdrop hidden></div>
   <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" data-sheet hidden>

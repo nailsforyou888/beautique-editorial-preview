@@ -8,52 +8,82 @@
   <meta name="robots" content="noindex, nofollow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../styles.css" />
 </head>
 <body>
   <header class="site-header" data-header>
-    <div class="container header-inner">
-      <a class="logo" href="../../index.html" aria-label="Beautique Bar home">
-        <span class="logo-mark">B</span>
-        <span class="logo-word">Beautique<span>.</span></span>
-      </a>
-      <nav class="nav-desktop" aria-label="Primary">
-        <a href="../../index.html#services">Services</a>
-        <a href="../index.html">Locations</a>
+    <div class="header-bar">
+      <nav class="nav-left" aria-label="Primary">
+        <a href="../../index.html">Home</a>
+        <a href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book</a>
+        <div class="nav-dd" data-dd>
+          <button type="button">Services</button>
+          <div class="nav-dd-menu">
+            <a href="../../index.html#services">Nails</a>
+            <a href="../../nails/manicure-pedicure/index.html">Pedicures</a>
+            <a href="../../index.html#services">Lashes</a>
+            <a href="../../index.html#services">Skin</a>
+          </div>
+        </div>
       </nav>
-      <div class="nav-actions">
-        <a class="btn btn-primary btn-sm" href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book</a>
-      </div>
+      <a class="brand" href="../../index.html" aria-label="Beautique Bar home">
+        <span class="brand-mark">B</span>
+        <span class="brand-name">Beautique Bar</span>
+      </a>
+      <nav class="nav-right" aria-label="Secondary">
+        <a href="../../about.html">About</a>
+        <div class="nav-dd" data-dd>
+          <button type="button">Locations</button>
+          <div class="nav-dd-menu">
+            <a href="index.html">Yonge &amp; York Mills</a>
+            <a href="../warden/index.html">Bridlewood Mall</a>
+          </div>
+        </div>
+        <div class="nav-dd" data-dd>
+          <button type="button">More</button>
+          <div class="nav-dd-menu">
+            <a href="https://www.instagram.com/beautiquebar88/" target="_blank" rel="noopener">Instagram</a>
+            <a href="../../privacy.html">Privacy</a>
+            <a href="../../terms.html">Terms</a>
+          </div>
+        </div>
+      </nav>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
         <span></span><span></span><span></span>
       </button>
     </div>
-    <nav class="nav-mobile container" aria-label="Mobile" data-nav-mobile>
-      <a href="../../index.html#services">Services</a>
-      <a href="../index.html">Locations</a>
+    <nav class="nav-mobile" aria-label="Mobile" data-nav-mobile>
+      <a href="../../index.html">Home</a>
       <a href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book</a>
+      <a href="../warden/index.html">Bridlewood</a>
+      <a href="../../about.html">About</a>
     </nav>
   </header>
 
   <main>
-    <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow-pill">Yonge &amp; York Mills</p>
-        <h1>Beautique Bar on Yonge</h1>
-        <p class="lead">Street-level studio for nails, lashes, and skin at 3430 Yonge Street. Book ahead or ask about walk-ins.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book Yonge</a>
-          <a class="btn btn-secondary" href="tel:+14164847788">Call 416-484-7788</a>
-        </div>
+    <section class="bleed page-hero">
+      <div class="bleed-media">
+        <img class="bleed-poster" src="../../media/yonge.jpg" alt="" />
+        <video class="bleed-video" muted loop playsinline preload="metadata" poster="../../media/yonge.jpg" data-auto-loop>
+          <source src="../../media/yonge.mp4" type="video/mp4" />
+        </video>
+        <div class="bleed-shade bleed-shade--heavy"></div>
+      </div>
+      <div class="bleed-copy">
+        <p class="eyebrow">Location</p>
+        <h1 class="display-lg">Yonge</h1>
+        <p class="lede">3430 Yonge St.</p>
+        <a class="btn btn-outline" href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book</a>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container info-grid">
-        <article class="info-card">
+    <section class="page-panel">
+      <div class="page-panel-inner">
+        <article class="info-block">
           <h3>Address</h3>
           <p>
+            Beautique Bar on Yonge<br />
             3430 Yonge St<br />
             Toronto, ON M4N 2M9<br />
             <a href="https://maps.google.com/?q=3430+Yonge+St,+Toronto,+ON+M4N+2M9" target="_blank" rel="noopener">Open in Google Maps</a>
@@ -64,66 +94,24 @@
             Text <a href="sms:+14374344884">437-434-4884</a>
           </p>
         </article>
-        <article class="info-card">
+        <article class="info-block">
           <h3>Hours</h3>
           <ul class="hours-list">
-            <li><span class="day">Monday – Friday</span><span>10:00 – 8:00</span></li>
-            <li><span class="day">Saturday</span><span>10:00 – 7:00</span></li>
-            <li><span class="day">Sunday</span><span>10:00 – 6:00</span></li>
+            <li><span>Monday – Friday</span><span>10:00 – 8:00</span></li>
+            <li><span>Saturday</span><span>10:00 – 7:00</span></li>
+            <li><span>Sunday</span><span>10:00 – 6:00</span></li>
           </ul>
-          <p class="note">Walk-ins welcome. Booking ahead is recommended.</p>
+          <p class="note">Documented in FAQ materials — confirm with the studio before treating as live hours. Walk-ins welcome. Booking ahead is recommended.</p>
         </article>
-      </div>
-    </section>
-
-    <section class="section section-soft">
-      <div class="container">
-        <div class="split-head">
-          <h2>What we do on Yonge</h2>
-          <p>Come for a classic manicure, Bio Gel, acrylic, lash extensions, or a facial. We also welcome you at Beautique at Bridlewood Mall.</p>
-        </div>
-        <div class="loc-grid">
-          <article class="loc-card">
-            <p class="kicker">Nails</p>
-            <h3>Acrylic, Bio Gel, Shellac</h3>
-            <p class="muted">Sculpted acrylic, nourishing Bio Gel, and long-wear Shellac.</p>
-          </article>
-          <article class="loc-card">
-            <p class="kicker">Pedicures</p>
-            <h3>Spa &amp; gel finishes</h3>
-            <p class="muted">Luxurious spa manicures and pedicures — pampered, polished and perfect.</p>
-          </article>
-          <article class="loc-card">
-            <p class="kicker">Lashes</p>
-            <h3>Extensions</h3>
-            <p class="muted">Meticulously applied to enhance your natural beauty.</p>
-          </article>
-          <article class="loc-card">
-            <p class="kicker">Skin</p>
-            <h3>Facials &amp; waxing</h3>
-            <p class="muted">Nourishing facials plus facial and body hair removal.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="closing" id="book">
-      <div class="container">
-        <h2>Book this studio</h2>
-        <p>Fresha booking for Beautique Bar on Yonge only.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="https://www.fresha.com/a/beautique-bar-on-yonge-toronto-3430-yonge-street-e0fzhnga/booking?menu=true" target="_blank" rel="noopener">Book Yonge</a>
-          <a class="btn btn-secondary" href="tel:+14164847788">Call</a>
-          <a class="btn btn-secondary" href="sms:+14374344884">Text</a>
-        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
+    <div class="footer-grid">
       <div class="footer-brand">
-        <span class="logo-word">Beautique.</span>
+        <span class="brand-mark">B</span>
+        <span class="brand-name">Beautique Bar</span>
         <p>Yonge &amp; York Mills studio — also at Bridlewood Mall.</p>
       </div>
       <div>
@@ -150,7 +138,7 @@
         </div>
       </div>
     </div>
-    <div class="container footer-bottom">
+    <div class="footer-bottom">
       <span>© Beautique Bar · Toronto</span>
       <span>Static preview · not beautiquebar.com</span>
     </div>
